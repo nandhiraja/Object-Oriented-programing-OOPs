@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Object-Oriented-programing-OOPs.iml" filepath="$PROJECT_DIR$/Object-Oriented-programing-OOPs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/summa/summa.iml" filepath="$PROJECT_DIR$/summa/summa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taxibooking/summa.iml" filepath="$PROJECT_DIR$/taxibooking/summa.iml" />
     </modules>
   </component>
 </project>
