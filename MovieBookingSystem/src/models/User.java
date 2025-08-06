@@ -1,49 +1,80 @@
 package models;
 
 public class User {
-    private static int id =1;
-    private int userId;
-    private String name;
-    private String address;
-    private String phoneNO;
+    private static long userCount = 0;
+    private long userId;
+    private String userName;
+    private String email;
+    private Role role;
+    private String mobileNumber;
+    private String password;
 
-
-// setter
-
-    public User(String name, String address, String phoneNo) {
-        this.userId = id++;
-        this.name = name;
-        this.address = address;
-        this.phoneNO = phoneNo;
+    public User(String userName, String email, String mobileNumber, String password) {
+        this.userId = ++userCount;
+        this.userName = userName;
+        this.email = email;
+        this.role = Role.USER;
+        this.mobileNumber = mobileNumber;
+        this.password = password;
     }
 
-    // getters
-    public String getName(){
-        return this.name;
-    }
-    public String getAddress(){
-        return this.address;
-    }
-    public String getPhoneNO(){
-        return this.phoneNO;
-    }
-    public int getUserId(){
-        return this.userId;
+    public Role getRole() {
+        return role;
     }
 
-
-   
-    public void showUser(){
-     System.out.println("---------------User Details-------------------");
-     System.out.println("userId : "+this.userId);
-     System.out.println("Name : " +this.name);
-     System.out.println("Address :"+this.address);
-     System.out.println("MobileNo : "+this.phoneNO);
-
-    System.out.println("------------------------------------------------");
-
-
+    public void setRole(Role role) {
+        this.role = role;
     }
 
-    
+    public long getUserCount() {
+        return userCount;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", role=" + role +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                '}';
+    }
+
 }
