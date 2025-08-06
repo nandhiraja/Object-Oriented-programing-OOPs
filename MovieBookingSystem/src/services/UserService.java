@@ -20,12 +20,11 @@ public class UserService {
         return currentUser;
     }
 
-    public void updateProfile(long userId, String userName, String email, Role role, String mobileNumber, String password) {
+    public void updateProfile(long userId, String userName, String email, String mobileNumber, String password) {
         User currentUser = findUser(userId);
         if (currentUser != null) {
             currentUser.setUserName(userName);
             currentUser.setEmail(email);
-            currentUser.setRole(role);
             currentUser.setMobileNumber(mobileNumber);
             currentUser.setPassword(password);
             System.out.println("Profile updated successfully.");
