@@ -2,6 +2,10 @@ package Models;
 
 public class User {
     private static int id =1;
+
+    public static void setId(int id) {
+        User.id = id;
+    }
     private int userId;
     private String name;
     private String address;
@@ -30,6 +34,7 @@ public class User {
     public int getUserId(){
         return this.userId;
     }
+    
 
 
    
@@ -44,6 +49,8 @@ public class User {
 
 
     }
+
+    
 
     
 }
