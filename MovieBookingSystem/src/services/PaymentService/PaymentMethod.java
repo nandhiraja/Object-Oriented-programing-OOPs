@@ -1,5 +1,5 @@
-package Services.PaymentService;
-import Models.Payment;
+package services.PaymentService;
+import models.Payment;
 
 interface PaymentMethod {
 

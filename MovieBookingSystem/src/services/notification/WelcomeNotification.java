@@ -1,7 +1,7 @@
-package Services.Notification;
+package services.notification;
 
-import Models.User;
-import Services.MoviesHandler;
+import models.User;
+import services.MoviesHandler;
 
 class WelcomeNotification implements NotificationService{
 
@@ -18,4 +18,3 @@ class WelcomeNotification implements NotificationService{
     
 
 }
-    

@@ -1,7 +1,7 @@
-package Services.Notification;
+package services.notification;
 
-import Models.MovieShows;
-import Models.User;
+import models.MovieShows;
+import models.User;
 
 
 interface NotificationService {

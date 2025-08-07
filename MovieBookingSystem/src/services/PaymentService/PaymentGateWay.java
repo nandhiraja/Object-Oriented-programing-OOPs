@@ -1,13 +1,12 @@
-package Services.PaymentService;
+package services.PaymentService;
 
-import Models.Payment;
-import Services.PaymentService.*;
+import models.Payment;
 
 public class PaymentGateWay {
 
     
-    public boolean payAmount(Payment resquest){
-        String Method =resquest.getPaymentMethod();
+    public boolean payAmount(Payment request){
+        String Method =request.getPaymentMethod();
         PaymentMethod method = switch(Method){
                 case "Gpay" -> new Gpay();
                 case "Paytm" -> new Paytm();

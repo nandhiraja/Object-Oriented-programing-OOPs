@@ -1,8 +1,6 @@
-package Services.PaymentService;
+package services.PaymentService;
 
-import java.util.Scanner;
-
-import Models.Payment;
+import models.Payment;
 
 public class Gpay implements PaymentMethod{
 

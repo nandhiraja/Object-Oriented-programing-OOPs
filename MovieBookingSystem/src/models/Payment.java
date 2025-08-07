@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class Payment {
     private static int id =1;

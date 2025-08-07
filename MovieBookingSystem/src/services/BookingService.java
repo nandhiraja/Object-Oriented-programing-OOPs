@@ -1,9 +1,9 @@
-package Services;
+package services;
 
-import Models.MovieShows;
-import Models.Payment;
-import Models.User;
-import Services.PaymentService.PaymentGateWay;
+import models.MovieShows;
+import models.Payment;
+import models.User;
+import services.PaymentService.PaymentGateWay;
 import java.util.Date;
 
 import java.util.Scanner;
