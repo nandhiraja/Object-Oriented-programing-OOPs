@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class Movie {
     private static int id=1 ;

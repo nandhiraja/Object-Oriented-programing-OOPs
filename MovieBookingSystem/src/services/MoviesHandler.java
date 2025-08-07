@@ -1,6 +1,6 @@
-package Services;
-import Models.Movie;
-import Models.MovieShows;
+package services;
+import models.Movie;
+import models.MovieShows;
 
 import java.util.*;
 public class MoviesHandler {
@@ -30,11 +30,6 @@ public class MoviesHandler {
     }
 
 
-
-   
-
+    public void viewAllShows() {
+    }
 }
-
-
-
-

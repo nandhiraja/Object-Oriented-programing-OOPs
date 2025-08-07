@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class Booking {
     private static int id=1;

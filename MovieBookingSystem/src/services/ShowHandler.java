@@ -1,11 +1,10 @@
-package Services;
+package services;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Models.Movie;
-import Models.MovieShows;
-import Services.MoviesHandler;
+import models.Movie;
+import models.MovieShows;
 
 class ShowHandler {
     private   ArrayList<MovieShows>   showList   =  new ArrayList<>();

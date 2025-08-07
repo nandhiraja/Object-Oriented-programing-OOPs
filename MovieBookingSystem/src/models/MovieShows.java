@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class MovieShows {
     private static int nextId = 1;  
@@ -8,7 +8,7 @@ public class MovieShows {
     private final String showTime;      
     private final String showDate;   
     private final int screenNumber;  
-    private  int  availabelSeat;    
+    private  int availableSeat;
     private final int price;
    
 
@@ -19,7 +19,7 @@ public class MovieShows {
         this.showTime = showTime;
         this.screenNumber = screenNumber;
         this.showDate = showDate;
-        this.availabelSeat = availabelSeat;
+        this.availableSeat = availabelSeat;
         this.price =price;
     }
 
@@ -44,14 +44,14 @@ public class MovieShows {
         return showDate;
     }
 
-    public int getAvailabelSeat() {
-        return availabelSeat;
+    public int getAvailableSeat() {
+        return availableSeat;
     }
       public int getShowPrice() {
         return price;
     }
     public void  setAvailableSeat(int seatBooked){
-        this.availabelSeat -= seatBooked;
+        this.availableSeat -= seatBooked;
     }
 
 
@@ -64,7 +64,7 @@ public class MovieShows {
         System.out.println("Screen: " + screenNumber);
         System.out.println("Show Date: " + showDate);
         System.out.println("Show Time: " + showTime);
-        System.out.println("Available seats: " + availabelSeat);
+        System.out.println("Available seats: " + availableSeat);
         System.out.println("Price  Rs : " + price);
 
 

@@ -1,6 +1,6 @@
-package Services.PaymentService;
+package services.PaymentService;
 
-import Models.Payment;
+import models.Payment;
 
 public class Paytm implements PaymentMethod {
 
